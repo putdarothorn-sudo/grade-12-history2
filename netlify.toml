@@ -1,0 +1,9 @@
+[build]
+  publish = "public"
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+  external_node_modules = ["pdf-parse", "mammoth"]
+
+[functions.study]
+  included_files = ["public/assets/exams/history-reference.pdf"]
